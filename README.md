@@ -22,6 +22,10 @@ Angular Todo - with Karma automated tests and code coverage HTML report
 
 ![image](https://raw.githubusercontent.com/spjeff/todo-karma-coverage/master/doc/2.png)
 
+![image](https://raw.githubusercontent.com/spjeff/todo-karma-coverage/master/doc/3.png)
+
+![image](https://raw.githubusercontent.com/spjeff/todo-karma-coverage/master/doc/4.png)
+
 ## Contact
 Please drop a line to [@spjeff](https://twitter.com/spjeff) or [spjeff@spjeff.com](mailto:spjeff@spjeff.com)
 Thanks!  =)
