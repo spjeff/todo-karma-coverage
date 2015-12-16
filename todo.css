@@ -1,0 +1,12 @@
+﻿body {
+    background-color:lightgray;
+}
+
+.todoChk {
+    height:25px;
+    width:25px;
+}
+.todoChkOn {
+    background-color:yellow;
+    border:red;
+}

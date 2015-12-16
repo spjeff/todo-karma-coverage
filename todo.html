@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <title>Todo List</title>
+    <meta charset="utf-8" />
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="todo.js"></script>
+    <link href="todo.css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1>Todo List</h1>
+    <div ng-app="todoApp">
+        <div ng-controller="todoCtl">
+            <a href="#" ng-click="archive()">[archive]</a> {{remain()}} out of {{todos.length}}
+            <hr />
+            <ul>
+                <li ng-repeat="t in todos">
+                    <input type="checkbox" ng-model="t.done" class="todoChk"/>
+                    <span ng-class="{'todoChkOn': t.done}">
+                        {{t.name}}
+                    </span>
+                </li>
+            </ul>
+            <hr />
+            <form ng-submit="add()">
+                <input type="text" autofocus ng-model="newTodo" autocomplete="off" />
+                <input type="submit" value="Add" />
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
