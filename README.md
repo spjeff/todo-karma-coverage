@@ -14,6 +14,12 @@ Angular Todo - with Karma automated tests and code coverage HTML report
 * `npm install -g jasmine`
 * `npm install -g PhantomJS`
 
+## Screenshots
+
+![image](https://raw.githubusercontent.com/spjeff/todo-karma-coverage/master/doc/1.png)
+
+![image](https://raw.githubusercontent.com/spjeff/todo-karma-coverage/master/doc/2.png)
+
 ## Contact
 Please drop a line to [@spjeff](https://twitter.com/spjeff) or [spjeff@spjeff.com](mailto:spjeff@spjeff.com)
 Thanks!  =)
