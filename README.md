@@ -9,10 +9,12 @@ Angular Todo - with Karma automated tests and code coverage HTML report
 
 ## Notes
 * Might require NPM globals
+* `npm install -g jasmine-core`
 * `npm install -g karma`
 * `npm install -g karma-coverage`
-* `npm install -g jasmine`
-* `npm install -g PhantomJS`
+* `npm install -g karma-jasmine`
+* `npm install -g karma-phantomjs-launcher`
+* `npm install -g phantomjs`
 
 ## Screenshots
 
