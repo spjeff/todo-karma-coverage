@@ -14,6 +14,7 @@ Angular Todo - with Karma automated tests and code coverage HTML report
 * `npm install -g karma-coverage`
 * `npm install -g karma-jasmine`
 * `npm install -g phantomjs`
+* `npm install -g phantomjs-prebuilt`
 * `npm install -g karma-phantomjs-launcher`
 * If you need to clear NPM global cache simply delete %APPDATA%\NPM and %APPDATA%\NPM-CACHE folders then run above commands again.
 
