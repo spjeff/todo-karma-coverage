@@ -1,61 +1,47 @@
-describe("Todo List", function () {
+describe("Todo List", function() {
 
-    var $controller;
+    var vm;
 
     // Setup for all tests
-    beforeEach(function () {
-        // loads the app module
+    beforeEach(function() {
+
+        // module
+        var $controller;
         module('todoApp');
-        inject(function (_$controller_) {
+        inject(function(_$controller_) {
             // inject removes the underscores and finds the $controller Provider
             $controller = _$controller_;
         });
+
+        // controller
+        vm = {};
+        $controller('todoCtl', { $scope: vm });
     });
-    
-    it("list begins", function () {
-        var $scope = {};
-        
-        // $controller takes an object containing a reference to the $scope
-        var controller = $controller('todoCtl', { $scope: $scope });
-        
+
+    it("list begins", function() {
         // the assertion checks the expected result
-        expect($scope.todos.length).toBe(3);
+        expect(vm.todos.length).toBe(3);
     });
-    
-    it("add items", function () {
-        var $scope = {};
-        
-        // $controller takes an object containing a reference to the $scope
-        var controller = $controller('todoCtl', { $scope: $scope });
-        
+
+    it("add items", function() {
         // the assertion checks the expected result
-        $scope.newTodo = 'Hello World';
-        $scope.add();
-        $scope.add();
-        $scope.add();
-        $scope.add();
-        expect($scope.todos.length).toBe(7);
+        vm.newTodo = 'Hello World';
+        vm.add();
+        vm.add();
+        vm.add();
+        vm.add();
+        expect(vm.todos.length).toBe(7);
     });
-    
-    it("check items and archive", function () {
-        var $scope = {};
-        
-        // $controller takes an object containing a reference to the $scope
-        var controller = $controller('todoCtl', { $scope: $scope });
-        
+
+    it("check items and archive", function() {
         // the assertion checks the expected result
-        $scope.archive();
-        expect($scope.todos.length).toBe(2);
+        vm.archive();
+        expect(vm.todos.length).toBe(2);
     });
-    
-    it("remaining items", function () {
-        var $scope = {};
-        
-        // $controller takes an object containing a reference to the $scope
-        var controller = $controller('todoCtl', { $scope: $scope });
-        
+
+    it("remaining items", function() {
         // the assertion checks the expected result
-        expect($scope.remain()).toBe(2);
+        expect(vm.remain()).toBe(2);
     });
-    
+
 });
