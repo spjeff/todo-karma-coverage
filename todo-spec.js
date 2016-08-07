@@ -6,16 +6,16 @@ describe("Todo List", function() {
     beforeEach(function() {
 
         // module
-        var $controller;
+        var ctl;
         module('todoApp');
         inject(function(_$controller_) {
             // inject removes the underscores and finds the $controller Provider
-            $controller = _$controller_;
+            ctl = _$controller_;
         });
 
         // controller
         vm = {};
-        $controller('todoCtl', { $scope: vm });
+        ctl('todoCtl', { $scope: vm });
     });
 
     it("list begins", function() {
